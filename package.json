@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test:": "jest",
+    "test": "jest",
     "loadtest:data": "TEST_URL=http://localhost:3000/data MAX_REQUESTS=1000 CONCURRENCY=10 node ./bin/loadtest.js",
     "loadtest:time": "TEST_URL=http://localhost:3000/time MAX_REQUESTS=1000 CONCURRENCY=10 node ./bin/loadtest.js",
     "loadtest:all": "npm run loadtest:data && npm run loadtest:time",
