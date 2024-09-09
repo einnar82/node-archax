@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "test:": "jest",
+    "loadtest:data": "TEST_URL=http://localhost:3000/data MAX_REQUESTS=1000 CONCURRENCY=10 node ./bin/loadtest.js",
+    "loadtest:time": "TEST_URL=http://localhost:3000/time MAX_REQUESTS=1000 CONCURRENCY=10 node ./bin/loadtest.js",
+    "loadtest:all": "npm run test:data && npm run test:time",
+    "question-7": "node ./src/question-7.js",
+    "question-8": "node --expose-gc ./src/question-8.js"
+  },
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "loadtest": "^8.0.9"
+  }
+}
